@@ -1,4 +1,5 @@
 # Human-Like Committee Reasoning
+![Architecture Overview](Reasoning.jpg)
 
 **Author:** Songnian Qian  
 **Role:** Senior Software Developer  
@@ -32,7 +33,6 @@ Unlike current single-pass language models that generate responses in one forwar
 
 The result is a reasoning architecture that improves robustness and reliability by structurally embodying the parallel, deliberative nature of human thought.
 
-![Architecture Overview](Reasoning.jpg)
 *A multi-stage reasoning framework inspired by human thought. Input is segmented, abstracted, and routed to specialist transformers. A Boltzmann-style evaluator and adaptive feedback drive the system toward a majority-vote consensus (3/4) rather than unanimity, with memory, goals, and value weighting guiding decisions.*
 
 ---
@@ -173,9 +173,6 @@ print(f"Minority report: {result.minority_report}")
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-[Your License Here]
 
 ## Contact
 
