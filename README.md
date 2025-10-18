@@ -11,6 +11,8 @@
 
 This framework introduces a committee-based reasoning system that mirrors the four core mechanisms of human reasoning:
 
+A key advantage of this approach is leveraging the beauty of Transformer's self-supervised training. Unlike Chain of Thought methods that require carefully curated reasoning chains and prompts.
+
 ### 1. Abstraction and Compression
 An auto-index network reduces rich input into essential meaning—equivalent to how human cognition compresses sensory data into concepts through perception and conceptualization.
 
