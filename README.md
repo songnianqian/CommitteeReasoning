@@ -64,7 +64,19 @@ Attention+FFN-enhanced Boltzmann-style evaluator ingests the four answers and ou
 
 > **Knowledge is in the dataset; it just depends on who you ask.** A physicist, historian, engineer, and philosopher all have access to the same underlying facts, but they retrieve and synthesize information differently based on their training and perspective.
 
-### 6. Majority-Vote Consensus Policy (3/4)
+### 6. Personality-Enabled Committee Members
+The CommitteeReasoning framework now supports distinct personalities for each committee member, allowing more natural and diverse reasoning.
+Each member represents a different perspective — such as Engineer, Scientist, Historian, or Philosopher — with unique traits, tone, and decision priorities.
+Together, they debate, critique, and reach consensus through the existing 3-of-4 voting and refinement process.
+
+Key Ideas
+- **Distinct roles encourage multi-angle reasoning instead of uniform agreement.
+- **Personality diversity improves robustness, creativity, and error detection.
+- **Shared backbone ensures all members draw from the same knowledge while expressing different reasoning styles.
+- **Evaluator remains unchanged but benefits from richer, more balanced discussions.
+This addition turns the committee into a simulation of collaborative reasoning — like multiple experts deliberating on complex questions.
+
+### 7. Majority-Vote Consensus Policy (3/4)
 - **Primary rule:** If 3 of 4 specialists agree semantically, accept consensus
 - **Tie case (2–2 split):** No consensus—trigger refinement loop
 - **Low-confidence override:** Even with 3/4, if group confidence is below a goal-dependent threshold, escalate to refinement
@@ -73,12 +85,12 @@ Attention+FFN-enhanced Boltzmann-style evaluator ingests the four answers and ou
   - (b) a fused summary aligned with the majority cluster
 - **Minority report:** Log the minority viewpoint to memory for future learning and diagnostics
 
-### 7. Memory Integration
+### 8. Memory Integration
 - **Short-term memory:** recent prompts, answers, and vote margins
 - **Long-term memory:** stable abstractions, success/failure traces, expert reliability stats
 - Memory weights can be margin-aware (3–1 > 3–1 with low confidence > 2–2)
 
-### 8. Feedback & Self-Adjustment (Refinement Loop)
+### 9. Feedback & Self-Adjustment (Refinement Loop)
 **Triggered when:**
 - (a) 2–2 split
 - (b) 3–1 but confidence too low
@@ -89,20 +101,20 @@ Attention+FFN-enhanced Boltzmann-style evaluator ingests the four answers and ou
 - **Adaptive learning:** Use disagreement statistics to adjust auto-index routing priors and expert influence weights
 - **Loop limits:** Stop on convergence to 3/4 majority with adequate confidence, or after R rounds (early stop if similarity stagnates)
 
-### 9. Goal & Value Modulation
+### 10. Goal & Value Modulation
 Meta-controller encodes objectives (accuracy, creativity, efficiency, safety) and sets:
 - Confidence thresholds for accepting 3/4
 - Whether to consult all 4 or top-k specialists
 - When to escalate to refinement despite a majority
 - Value weighting layer raises thresholds for high-risk queries
 
-### 10. Hierarchical Abstraction
+### 11. Hierarchical Abstraction
 Aggregate paragraph-level clusters into higher-order themes for multi-level reasoning (bottom-up synthesis, top-down guidance).
 
-### 11. Imagination / Hypothesis Generation
+### 12. Imagination / Hypothesis Generation
 On persistent disagreement, spawn hypotheses (alternative framings/counterfactuals) and re-evaluate them under the same 3/4 rule.
 
-### 12. Self-Evaluation & Confidence Calibration
+### 13. Self-Evaluation & Confidence Calibration
 Final output carries a calibrated confidence combining:
 - Majority size (3–1 vs 4–0)
 - Individual model certainty
