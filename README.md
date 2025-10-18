@@ -68,7 +68,7 @@ Attention+FFN-enhanced Boltzmann-style evaluator ingests the four answers and ou
 > **Attention is all you need — for personalities.
 > 
 The CommitteeReasoning framework now supports distinct personalities for each committee member, allowing more natural and diverse reasoning.
-Each member represents a different perspective — such as Engineer, Scientist, Historian, or Philosopher — with unique traits, tone, and decision priorities.
+Each member — such as an Engineer, Scientist, Historian, or Philosopher — applies the same shared knowledge with different attention, tone, and decision style.
 Together, they debate, critique, and reach consensus through the existing 3-of-4 voting and refinement process.
 
 Key Ideas
