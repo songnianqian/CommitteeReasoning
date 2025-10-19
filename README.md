@@ -29,7 +29,7 @@ The Committee Reasoning framework now supports both distinct personalities and d
 A Boltzmann-style evaluator functions as a collective decision maker, finding coherence among multiple viewpoints through 3/4 majority voting—equivalent to internal deliberation or "mental voting" when weighing competing thoughts.
 
 ### 5. Feedback Loop
-An iterative refinement process re-feeds prior outputs when models disagree—equivalent to self-correction and "thinking twice" in human metacognition.
+An iterative refinement process re-feeds prior outputs when models disagree — equivalent to self-correction and “thinking twice” in human metacognition. If consensus cannot be reached, the system invites additional domain experts into the discussion, bringing fresh perspectives or specialized knowledge to help resolve disagreements and refine the final conclusion.
 
 ---
 
