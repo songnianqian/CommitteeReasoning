@@ -22,6 +22,7 @@ Four specialized transformer networks act like experts with different reasoning 
 ### 3. Personality-Enabled and Domain-Expert Committee Members
 
 **Attention is all you need — for personalities and expertise.
+
 The Committee Reasoning framework now supports both distinct personalities and domain-specific experts, enabling more natural, grounded, and versatile reasoning. Each member — such as an Engineer, Scientist, Historian, Philosopher, or Math Expert — applies the same shared knowledge through a unique attention style, tone, and reasoning approach. Domain experts are trained on their specialized knowledge: for example, a Math Expert can perform real calculations rather than relying only on pattern matching. Together, they debate, critique, and reach consensus through the existing 3-of-4 voting and refinement process.
 
 ### 4. Agreement and Consensus
