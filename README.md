@@ -19,10 +19,15 @@ An auto-index network reduces rich input into essential meaning—equivalent to 
 ### 2. Specialization and Parallel Reasoning
 Four specialized transformer networks act like experts with different reasoning styles or knowledge domains—equivalent to divided cognition where humans consult different "mental experts" for logic, emotion, memory, and pattern recognition.
 
-### 3. Agreement and Consensus
+### 3. Personality-Enabled and Domain-Expert Committee Members
+
+**Attention is all you need — for personalities and expertise.
+The Committee Reasoning framework now supports both distinct personalities and domain-specific experts, enabling more natural, grounded, and versatile reasoning. Each member — such as an Engineer, Scientist, Historian, Philosopher, or Math Expert — applies the same shared knowledge through a unique attention style, tone, and reasoning approach. Domain experts are trained on their specialized knowledge: for example, a Math Expert can perform real calculations rather than relying only on pattern matching. Together, they debate, critique, and reach consensus through the existing 3-of-4 voting and refinement process.
+
+### 4. Agreement and Consensus
 A Boltzmann-style evaluator functions as a collective decision maker, finding coherence among multiple viewpoints through 3/4 majority voting—equivalent to internal deliberation or "mental voting" when weighing competing thoughts.
 
-### 4. Feedback Loop
+### 5. Feedback Loop
 An iterative refinement process re-feeds prior outputs when models disagree—equivalent to self-correction and "thinking twice" in human metacognition.
 
 ---
